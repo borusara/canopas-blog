@@ -1,0 +1,22 @@
+{
+  "name": "canopas-blog",
+  "description": "My Canopas Blog",
+  "repository": "https://github.com/borusara/canopas,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 3000
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
